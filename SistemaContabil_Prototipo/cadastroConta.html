@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Contábil - Protótipo</title>
+  <link rel="stylesheet" href="styleConta.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Conta Contábil</span>
+      <button onclick="openModal()" id="new">Incluir Conta</i></button>
+
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Sequencial</th>
+            <th>Código da Empresa</th>
+            <th>Código da Conta</th>
+            <th>Tipo da Conta</th>
+            <th>Descricao</th>
+
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-sequencial">Sequencial</label>
+          <input id="m-sequencial" type="number" required />
+  
+          <label for="m-codempresa">Código da Empresa</label>
+          <input id="m-codempresa" type="number" required />
+
+          <label for="m-codConta">Código da Conta</label>
+          <input id="m-codConta" type="number" required />
+
+          <label for="m-tipoConta">Tipo da Conta</label>
+          <input id="m-tipoConta" type="number" required />
+
+          <label for="m-descricao">Descrição</label>
+          <input id="m-descricao" type="text" required />
+          
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+      
+    </div>
+
+  
+
+  </div>
+  <script src="scriptConta.js"></script>
+</body>
+
+</html>
